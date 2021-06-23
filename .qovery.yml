@@ -1,0 +1,15 @@
+---
+application:
+  name: "project-sample"
+  project: "isv sample project"
+  organization: "QoveryCommunity"
+databases:
+- type: "POSTGRESQL"
+  name: "isvprojectsample"
+  version: "11"
+routers:
+- name: "main-project-sample"
+  routes:
+  - application_name: "project-sample"
+    paths:
+    - "/*"
